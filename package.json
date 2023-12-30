@@ -1,11 +1,18 @@
 {
-  "name": "medusa-next",
-  "version": "1.0.3",
+  "name": "beanbag-coffee-storefront",
+  "version": "1.0.0",
   "private": true,
-  "author": "Kasper Fabricius Kristensen <kasper@medusajs.com> (https://www.medusajs.com)",
-  "description": "Next.js starter to be used with Medusa server",
+  "author": "Joshua Lehman",
+  "description": "Beanbag Coffee Co. Online Store",
   "keywords": [
-    "medusa-storefront"
+    "coffee",
+    "tea",
+    "hot drinks",
+    "cold drinks",
+    "whole bean",
+    "ground coffee",
+    "online store",
+    "ecommerce"
   ],
   "scripts": {
     "dev": "next dev -p 8000",

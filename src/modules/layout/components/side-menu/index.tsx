@@ -95,8 +95,8 @@ const SideMenu = ({ searchModalOpen }: { searchModalOpen: () => void }) => {
                         />
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
-                        reserved.
+                        © {new Date().getFullYear()} Beanbag Coffee Co. All
+                        rights reserved.
                       </Text>
                     </div>
                   </div>

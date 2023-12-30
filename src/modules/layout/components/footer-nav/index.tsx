@@ -19,7 +19,7 @@ const FooterNav = () => {
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             >
-              Medusa Store
+              Beanbag Coffee Co.
             </Link>
           </div>
           <div className="text-small-regular grid grid-cols-3 gap-x-10 md:gap-x-16">

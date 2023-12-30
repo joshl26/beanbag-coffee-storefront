@@ -6,9 +6,19 @@ import { Metadata } from "next"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
-  description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "de-DE": "/de-DE",
+    },
+  },
+  openGraph: {
+    images: "/og-image.png",
+  },
+  title: "Beanbag Coffee Co. Online Storefront",
+  description: "A performant ecommerce store built with Next.js 14 and Medusa.",
 }
 
 export default async function Home() {
@@ -16,7 +26,7 @@ export default async function Home() {
 
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <Suspense fallback={<SkeletonHomepageProducts count={count} />}>
         <FeaturedProducts collections={collections} />
       </Suspense>
