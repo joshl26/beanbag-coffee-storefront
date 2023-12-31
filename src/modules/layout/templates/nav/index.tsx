@@ -9,6 +9,9 @@ import SideMenu from "@modules/layout/components/side-menu"
 import MobileMenu from "@modules/mobile-menu/templates"
 import DesktopSearchModal from "@modules/search/templates/desktop-search-modal"
 import Link from "next/link"
+import Button from "@modules/common/components/button"
+import InteractiveLink from "@modules/common/components/interactive-link"
+import RoundButtonLink from "@modules/common/components/round-button-link"
 
 const Nav = () => {
   const { toggle } = useMobileMenu()
@@ -21,7 +24,7 @@ const Nav = () => {
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
       <header className="relative h-16 px-8 mx-auto border-b duration-200 bg-white border-ui-border-base">
-        <nav className="txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
+        <nav className="txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between max-w-screen-2xl m-0 m-auto h-full text-small-regular">
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="block small:hidden">
               <Hamburger setOpen={toggle} />
@@ -31,12 +34,12 @@ const Nav = () => {
             </div>
           </div>
           <div className="flex items-center h-full">
-            <Link
+            {/* <Link
               href="/"
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
             >
               Beanbag Coffee Co.
-            </Link>
+            </Link> */}
           </div>
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
@@ -47,9 +50,13 @@ const Nav = () => {
                   open={searchModalOpen}
                 />
               )}
-              <Link className="hover:text-ui-fg-base" href="/account">
+              {/* <Link href="/account">Account</Link> */}
+              <RoundButtonLink
+                className="hover:text-ui-fg-base"
+                href="/account"
+              >
                 Account
-              </Link>
+              </RoundButtonLink>
             </div>
             <CartDropdown />
           </div>
