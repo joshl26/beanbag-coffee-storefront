@@ -22,7 +22,7 @@ const FooterNav = () => {
               Beanbag Coffee Co.
             </Link>
           </div>
-          <div className="text-small-regular grid grid-cols-3 gap-x-10 md:gap-x-16">
+          <div className="text-small-regular grid grid-cols-1 gap-x-10 md:gap-x-16">
             {/* {product_categories && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
@@ -78,9 +78,7 @@ const FooterNav = () => {
             )} */}
             {collections && (
               <div className="flex flex-col gap-y-2">
-                <span className="txt-small-plus txt-ui-fg-base">
-                  Current Selection
-                </span>
+                <span className="txt-small-plus txt-ui-fg-base">Drinks</span>
                 <ul
                   className={clsx(
                     "grid grid-cols-1 gap-2 text-ui-fg-subtle txt-small",
