@@ -1,6 +1,7 @@
 export const CardData = [
   {
     id: 1,
+    href: "/rewards",
     title: "Did you say Rewards?",
     textBody:
       "Wrap yourself in Rewards this season! Join Beanbag Rewards and link your eligible TD Card to unlock extra perks.*",
@@ -11,6 +12,7 @@ export const CardData = [
   },
   {
     id: 2,
+    href: "/store",
     title: "Cold Brewed Choices",
     textBody:
       "Cool down with a Cold Brewed coffee or tea drink. That's right, we also make cold brewed tea. Try one today!",
@@ -21,6 +23,7 @@ export const CardData = [
   },
   {
     id: 3,
+    href: "/store",
     title: "Grind your Own?",
     textBody:
       "All your favourite brews are also available in whole bean take home bags. Make a fresh ground brew each day at home!",

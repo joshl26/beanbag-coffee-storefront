@@ -1,5 +1,6 @@
 export type CardDataType = {
   id: number
+  href: string
   title: string
   textBody: string
   className: string

@@ -6,8 +6,7 @@ import { Metadata } from "next"
 import { Suspense } from "react"
 import { CardDataType } from "../../types/types"
 import { CardData } from "../data/cardData"
-// import Loading from "./loading"
-import styles from "./page.module.css"
+import Loading from "./loading"
 import LandingCard from "@modules/home/components/landing-cards"
 
 export const metadata: Metadata = {
@@ -32,17 +31,13 @@ export default async function Home() {
   return (
     <>
       <div className="h-12" />
-      {/* <Suspense fallback={<Loading />}> */}
-      <section className="">
-        <div />
+      {/* <Suspense fallback={<Loading />}>
+       
+      </Suspense> */}
+      <Suspense fallback={<SkeletonHomepageProducts count={count} />}>
         {CardData.map((card: CardDataType) => (
           <LandingCard key={card.id} card={card} />
         ))}
-
-        <div />
-      </section>
-      {/* </Suspense> */}
-      <Suspense fallback={<SkeletonHomepageProducts count={count} />}>
         <FeaturedProducts collections={collections} />
       </Suspense>
     </>

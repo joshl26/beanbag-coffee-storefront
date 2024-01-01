@@ -4,13 +4,10 @@ import { useMobileMenu } from "@lib/context/mobile-menu-context"
 import useToggleState from "@lib/hooks/use-toggle-state"
 import Hamburger from "@modules/common/components/hamburger"
 import CartDropdown from "@modules/layout/components/cart-dropdown"
-import DropdownMenu from "@modules/layout/components/dropdown-menu"
+// import DropdownMenu from "@modules/layout/components/dropdown-menu"
 import SideMenu from "@modules/layout/components/side-menu"
 import MobileMenu from "@modules/mobile-menu/templates"
 import DesktopSearchModal from "@modules/search/templates/desktop-search-modal"
-import Link from "next/link"
-import Button from "@modules/common/components/button"
-import InteractiveLink from "@modules/common/components/interactive-link"
 import RoundButtonLink from "@modules/common/components/round-button-link"
 
 const Nav = () => {
@@ -33,14 +30,6 @@ const Nav = () => {
               <SideMenu searchModalOpen={searchModalOpen} />
             </div>
           </div>
-          <div className="flex items-center h-full">
-            {/* <Link
-              href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-            >
-              Beanbag Coffee Co.
-            </Link> */}
-          </div>
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && (
@@ -50,7 +39,6 @@ const Nav = () => {
                   open={searchModalOpen}
                 />
               )}
-              {/* <Link href="/account">Account</Link> */}
               <RoundButtonLink
                 className="hover:text-ui-fg-base"
                 href="/account"
