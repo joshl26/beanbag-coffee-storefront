@@ -9,6 +9,8 @@ import SideMenu from "@modules/layout/components/side-menu"
 import MobileMenu from "@modules/mobile-menu/templates"
 import DesktopSearchModal from "@modules/search/templates/desktop-search-modal"
 import RoundButtonLink from "@modules/common/components/round-button-link"
+import Link from "next/link"
+import Image from "next/image"
 
 const Nav = () => {
   const { toggle } = useMobileMenu()
@@ -21,10 +23,20 @@ const Nav = () => {
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
       <header className="relative h-16 px-8 mx-auto border-b duration-200 bg-white border-ui-border-base">
-        <nav className="txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between max-w-screen-2xl m-0 m-auto h-full text-small-regular">
+        <nav className="txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between max-w-screen-2xl m-auto h-full text-small-regular">
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="block small:hidden">
               <Hamburger setOpen={toggle} />
+            </div>
+            <div className="hidden small:block pr-6">
+              <Link href="/">
+                <Image
+                  alt="Beanbag Coffee Co."
+                  width="40"
+                  height="40"
+                  src="https://res.cloudinary.com/dv6keahg3/image/upload/v1701275204/BeanbagCoffee/Beanbag_o1njjx.svg"
+                />
+              </Link>
             </div>
             <div className="hidden small:block h-full">
               <SideMenu searchModalOpen={searchModalOpen} />

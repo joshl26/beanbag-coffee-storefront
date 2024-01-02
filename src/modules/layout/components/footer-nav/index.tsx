@@ -4,7 +4,7 @@ import clsx from "clsx"
 import { useCollections, useProductCategories } from "medusa-react"
 import { Text } from "@medusajs/ui"
 import Link from "next/link"
-import MedusaCTA from "../medusa-cta"
+import MedusaCTA from "../beanbag-cta"
 
 const FooterNav = () => {
   const { collections } = useCollections()
@@ -13,7 +13,19 @@ const FooterNav = () => {
   return (
     <div className="border-t border-ui-border-base w-screen">
       <div className="content-container flex flex-col">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
+        <div className="h-24" />
+        <Text className="text-lg">
+          *Valid 01/01 - 04/30, enjoy 25% off your next Beanbag order of $20 or
+          more, excluding taxes and fees, on DoorDash. Fees subject to change.
+          Max value of discount is $10. Does not apply to pick up or dine-in
+          orders. Valid only at participating Beanbag locations in Canada.
+          Restricted delivery area. Menu items may be limited. Limit one
+          redemption per person. All deliveries subject to availability. Prices
+          for Beanbag items purchased through DoorDash may be higher than posted
+          in stores or as marked. See the DoorDash app for availability and
+          restrictions.
+        </Text>
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-20">
           <div>
             <Link
               href="/"

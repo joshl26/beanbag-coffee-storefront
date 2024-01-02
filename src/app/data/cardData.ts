@@ -1,7 +1,7 @@
 export const CardData = [
   {
     id: 1,
-    href: "/rewards",
+    href: "/store",
     title: "Did you say Rewards?",
     textBody:
       "Wrap yourself in Rewards this season! Join Beanbag Rewards and link your eligible TD Card to unlock extra perks.*",
