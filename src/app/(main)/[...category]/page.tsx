@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
+    metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
     title: `${category.name} | Beanbag Coffee Co.`,
     description: `${category.name} category`,
   }

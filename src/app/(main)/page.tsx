@@ -6,7 +6,7 @@ import { Metadata } from "next"
 import { Suspense } from "react"
 import { CardDataType } from "../../types/types"
 import { CardData } from "../data/cardData"
-import Loading from "./loading"
+// import Loading from "./loading"
 import LandingCard from "@modules/home/components/landing-cards"
 
 export const metadata: Metadata = {

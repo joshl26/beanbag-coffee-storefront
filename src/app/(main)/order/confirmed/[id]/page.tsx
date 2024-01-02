@@ -17,6 +17,7 @@ async function getOrder(id: string) {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   title: "Order Confirmed",
   description: "You purchase was successful",
 }

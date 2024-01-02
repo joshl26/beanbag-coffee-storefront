@@ -32,21 +32,18 @@ const LandingCard = ({ card }: CardType) => {
           >
             {card.buttonText}
           </RoundButtonLink>
-
-          {/* <RoundButton
-            className={clsx("border-white h-[40px]", {
-              "bg-green-700": card.className === "landing_card_one",
-              "bg-yellow-600": card.className === "landing_card_two",
-              "bg-red-600": card.className === "landing_card_three",
-            })}
-            href=""
-          >
-            
-          </RoundButton> */}
         </div>
       </div>
       <div className="w-full md:w-1/2 h-[500px]">
-        <Image src={card.imgUrl} alt="" width={500} height={500} />
+        <Image
+          priority
+          src={card.imgUrl}
+          alt=""
+          width="0"
+          height="0"
+          sizes="100vw"
+          className="w-full h-auto"
+        />
       </div>
     </div>
   )

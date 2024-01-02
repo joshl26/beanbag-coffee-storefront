@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { order } = await getOrder(params.id)
 
   return {
+    metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
     title: `Order #${order.display_id}`,
     description: `View your order`,
   }

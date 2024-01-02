@@ -3,6 +3,7 @@ import { search } from "../actions"
 import SearchResultsTemplate from "@modules/search/templates/search-results-template"
 
 export const metadata: Metadata = {
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   title: "Search",
   description: "Explore all of our products.",
 }

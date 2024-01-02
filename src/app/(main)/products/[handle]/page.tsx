@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
+    metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
     title: `${product.title} | Beanbag Coffee Co.`,
     description: `${product.title}`,
     openGraph: {
