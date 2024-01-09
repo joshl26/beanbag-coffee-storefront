@@ -1,13 +1,13 @@
 describe("Product page", () => {
   it("fetches product with handle [featured-medium-roast]", () => {
-    cy.viewport(1920, 1080)
+    cy.viewport(2000, 3000)
     cy.visit("/products/featured-medium-roast")
 
     cy.get("h2").contains("Featured Medium Roast")
   })
 
   it("adds a product to the cart", () => {
-    cy.viewport(1920, 1080)
+    cy.viewport(2000, 3000)
     cy.visit("/products/featured-medium-roast")
 
     // cy.get("img.button").click()
@@ -19,7 +19,7 @@ describe("Product page", () => {
   })
 
   it("adds a product twice to the cart", () => {
-    cy.viewport(1920, 1080)
+    cy.viewport(2000, 3000)
     cy.visit("/products/featured-medium-roast")
 
     // cy.get("img.button").click()
