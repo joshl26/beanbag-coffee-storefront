@@ -33,6 +33,7 @@ describe("Product page", () => {
     cy.get("[data-cy=cart_quantity]").contains("Cart (2)")
   })
 
+  //
   // it("changes the current image by clicking a thumbnail", () => {
   //   cy.visit("/products/t-shirt")
 
