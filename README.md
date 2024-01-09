@@ -1,3 +1,5 @@
+[![Beanbag Coffee](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/detailed/f8fshe&style=flat&logo=cypress)](https://cloud.cypress.io/projects/f8fshe/runs)
+
 # Quickstart
 
 ### Install dependencies
@@ -18,7 +20,7 @@ yarn dev
 
 ### Open the code and start customizing
 
-Your site is now running at http://localhost:8000!
+Your site is now running at <http://localhost:8000>!
 
 # Payment integrations
 
@@ -110,7 +112,7 @@ Then, make sure to set the following environment variables in your Next.js store
 > WARNING: This is a one way process. Once you opt in to these features and update your database, there's no way back. Proceed with caution.
 
 - `POSTGRES_URL`: the URL of your PostgreSQL databsae.
-- `NEXT_PUBLIC_BASE_URL`: the URL of your storefront's base URL. If you're running it locally, it should be http://localhost:8000.
+- `NEXT_PUBLIC_BASE_URL`: the URL of your storefront's base URL. If you're running it locally, it should be <http://localhost:8000>.
 
 After that, add the following environment variable to **both your Next.js storefront and Medusa backend** to enable the feature flag:
 
@@ -141,4 +143,4 @@ Done! All product and collection data should now be coming from the module. The 
 - [Website](https://nextjs.org/)
 - [GitHub](https://github.com/vercel/next.js)
 - [Documentation](https://nextjs.org/docs)
-"# beanbag-storefront" 
+"# beanbag-storefront"
