@@ -81,6 +81,7 @@ const OptionSelect: React.FC<OptionSelectProps> = ({
                 return (
                   <div key={v} className="flex flex-col w-[65px] items-center">
                     <Image
+                      className="button"
                       src={clsx(
                         size === v
                           ? "/beanbag-coffee-cup-sizes_colored.svg"

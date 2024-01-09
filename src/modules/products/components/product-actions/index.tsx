@@ -76,6 +76,7 @@ const ProductActionsInner: React.FC<ProductActionsProps> = ({ product }) => {
       )}
 
       <Button
+        id="button"
         onClick={addToCart}
         disabled={!inStock || !variant}
         variant="primary"
