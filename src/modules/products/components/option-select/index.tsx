@@ -34,7 +34,7 @@ const OptionSelect: React.FC<OptionSelectProps> = ({
     } else if (e.target.alt === "XL") {
       setDistance(195)
     }
-    console.log(e.target.alt)
+    // console.log(e.target.alt)
   }
 
   const spring = {
