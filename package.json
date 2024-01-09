@@ -20,6 +20,7 @@
     "start": "next start -p 8000",
     "lint": "next lint",
     "cypress": "cypress open",
+    "test": "cypress run --record --key 42b0c751-c045-4bb7-b8bc-766716819e43",
     "analyze": "ANALYZE=true next build"
   },
   "resolutions": {
