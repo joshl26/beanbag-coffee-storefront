@@ -42,7 +42,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   title: "Beanbag Coffee Co. Online Storefront",
-  description: "A performant ecommerce store built with Next.js 14 and Medusa.",
+  description:
+    "A performant ecommerce store built with Next.js 14 and MedusaJS.",
 }
 
 export default async function Home() {
