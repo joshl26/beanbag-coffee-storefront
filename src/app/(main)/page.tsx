@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Beanbag Coffee Co. Online Storefront",
     description:
-      "A performant ecommerce store built with Next.js 14 and Medusa.",
+      "A performant ecommerce store built with Next.js 14 and MedusaJS.",
     url: "https://storefront-git-main-joshl26.vercel.app/",
     siteName: "Beanbag Coffee Co.",
     images: [
