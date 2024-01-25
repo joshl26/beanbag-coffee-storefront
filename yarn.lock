@@ -711,10 +711,10 @@
     winston "^3.8.2"
     yargs "^15.3.1"
 
-"@medusajs/medusa-js@*", "@medusajs/medusa-js@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.npmjs.org/@medusajs/medusa-js/-/medusa-js-6.1.4.tgz"
-  integrity sha512-goZ9EdrHh/PgeLTVDc3lBQnWzhWVGEQHE6807y/u3b1yPQMAetKWaQFK16ZVuEAhDvDNGkp5uSp01KuutbO1pQ==
+"@medusajs/medusa-js@*", "@medusajs/medusa-js@^6.1.6":
+  version "6.1.6"
+  resolved "https://registry.npmjs.org/@medusajs/medusa-js/-/medusa-js-6.1.6.tgz"
+  integrity sha512-+6m0SBCv1FR4nEoftgSt1wwetKELpmNya0uTVnLgis9uRgTZfmb+BvmUxp7cSGE+PIoJtTjCyxgUUn1tLPLOrA==
   dependencies:
     axios "^0.24.0"
     cross-env "^5.2.1"
@@ -1858,14 +1858,14 @@
   resolved "https://registry.npmjs.org/@sqltools/formatter/-/formatter-1.2.5.tgz"
   integrity sha512-Uy0+khmZqUrUGm5dmMqVlnvufZRSK0FbYzVgp0UMstm+F5+W2/jnEEQyc9vo1ZR/E5ZI/B1WjjoTqBqwJL6Krw==
 
-"@stripe/react-stripe-js@^1.7.2":
+"@stripe/react-stripe-js@^1.16.5":
   version "1.16.5"
   resolved "https://registry.npmjs.org/@stripe/react-stripe-js/-/react-stripe-js-1.16.5.tgz"
   integrity sha512-lVPW3IfwdacyS22pP+nBB6/GNFRRhT/4jfgAK6T2guQmtzPwJV1DogiGGaBNhiKtSY18+yS8KlHSu+PvZNclvQ==
   dependencies:
     prop-types "^15.7.2"
 
-"@stripe/stripe-js@^1.29.0", "@stripe/stripe-js@^1.44.1":
+"@stripe/stripe-js@^1.44.1", "@stripe/stripe-js@^1.54.2":
   version "1.54.2"
   resolved "https://registry.npmjs.org/@stripe/stripe-js/-/stripe-js-1.54.2.tgz"
   integrity sha512-R1PwtDvUfs99cAjfuQ/WpwJ3c92+DAMy9xGApjqlWQMj0FKQabUAys2swfTRNzuYAYJh7NqK2dzcYVNkKLEKUg==
